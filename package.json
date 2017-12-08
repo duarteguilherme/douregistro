@@ -1,0 +1,20 @@
+{
+  "name": "douregistro",
+  "version": "0.0.1",
+  "description": "Sistema de registro em IPFS para confirmar não-alterações do DOU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "douregistro"
+  },
+  "author": "Guilherme Jardim Duarte (JOTA)",
+  "license": "MIT",
+  "dependencies": {
+    "ipfs": "^0.27.1",
+    "request": "^2.83.0"
+  }
+}
