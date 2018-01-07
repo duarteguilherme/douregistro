@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node app/baixa_sessao.js"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,10 @@
   "author": "Guilherme Jardim Duarte (JOTA)",
   "license": "MIT",
   "dependencies": {
-    "ipfs": "^0.27.1",
+    "async": "^2.6.0",
+    "ipfs": "^0.25.4",
+    "ipfs-api": "^17.2.5",
+    "ipfs-daemon": "^0.3.1",
     "request": "^2.83.0"
   }
 }
