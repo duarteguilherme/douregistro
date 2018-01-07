@@ -16,9 +16,10 @@ function dateToYMD(date) {
 console.log(dateToYMD(now));
 function baixa_pagina(item, ipfs) { // Funcao - baixa uma pagina especifica do Diario OFicial e pina na rede IPFS
     requestSettings = {
-        url: "http://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=515&pagina=" + String(item) + "&data" + dateToYMD() + "=&captchafield=firstAccess", 
+        url: "http://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?jornal=515&pagina=" + String(item) + "&data=" + dateToYMD(now) + "=&captchafield=firstAccess", 
         encoding: null
     }
+    console.log(requestSettings)
     request.get(requestSettings, function(error, HttpResponse, body) {
         ipfs.files.add(body, (err,res) => {
             console.log(res); 
